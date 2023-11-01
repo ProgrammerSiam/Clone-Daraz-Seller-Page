@@ -9,6 +9,7 @@
   padding: 0;
   outline: 0;
   font-family: "Montserrat", sans-serif;
+  /* overflow-x: hidden; */
   /* Use a specific font-family */
   /* font-family: "Ubuntu", sans-serif; */
   list-style: none;
@@ -37,12 +38,12 @@ section {
 
 /* Headline text styles with responsive classes */
 .head_text {
-  @apply text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.15] text-white;
+  @apply text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.15] text-white;
 }
 
 /* Subtext styles with a top margin and font-weight */
 .sub_text {
-  @apply mt-2 text-3xl font-semibold;
+  @apply mt-2 text-2xl md:text-3xl font-semibold;
 }
 
 /* Description text styles with font-weight and color */

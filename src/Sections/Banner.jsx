@@ -29,7 +29,7 @@ export default function Banner() {
         {/* Content Section */}
         <div className="relative w-full lg:max-w-2xl">
           <h2 className="head_text">Bangladesh's #1 Marketplace</h2>
-          <p className="mt-4 w-full text-xl text-white lg:max-w-lg">
+          <p className="mt-4 w-full text-lg md:text-xl text-white lg:max-w-lg">
             Create a Daraz seller account in 5 minutes and reach millions of
             customers today!
           </p>

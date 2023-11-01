@@ -61,7 +61,7 @@ export default function Navbar() {
             isSideMenuOpen && "translate-x-0"
           )}
         >
-          <div className="text-black bg-white flex-col absolute left-0 top-0 h-screen p-8 gap-5 z-50 w-[30%] flex">
+          <div className="text-black bg-white flex-col absolute left-0 top-0 h-screen p-8 gap-5 z-50 w-[40%] flex">
             <IoCloseOutline
               onClick={() => setMenu(false)}
               className="mt-0 mb-8 text-3xl cursor-pointer"

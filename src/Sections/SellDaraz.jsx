@@ -12,7 +12,7 @@ export default function SellDaraz() {
       <div className="container">
         {/* Title section */}
         <div className="mt-12 md:mt-36 lg:mt-8">
-          <h2 className="text-5xl text-center md:text-start lg:text-6xl font-medium">
+          <h2 className="text-3xl text-center md:text-start lg:text-6xl font-medium">
             Why Sell on Daraz?
           </h2>
         </div>
