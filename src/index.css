@@ -1,0 +1,51 @@
+/* Apply base styles from Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global CSS reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Montserrat", sans-serif;
+  /* Use a specific font-family */
+  /* font-family: "Ubuntu", sans-serif; */
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Customize the scrollbar style (for webkit browsers) */
+html::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #FD5417; /* Customize scrollbar thumb color */
+}
+
+/* Define a base padding for all sections */
+section {
+  padding-top: 6rem;
+}
+
+/* Headline text styles with responsive classes */
+.head_text {
+  @apply text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.15] text-white;
+}
+
+/* Subtext styles with a top margin and font-weight */
+.sub_text {
+  @apply mt-2 text-3xl font-semibold;
+}
+
+/* Description text styles with font-weight and color */
+.desc {
+  @apply font-semibold text-white;
+}
