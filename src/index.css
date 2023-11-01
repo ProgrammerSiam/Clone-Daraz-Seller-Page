@@ -18,6 +18,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+overflow-x: hidden;
+
+}
+
 /* Customize the scrollbar style (for webkit browsers) */
 html::-webkit-scrollbar {
   width: 0.3rem;
@@ -38,7 +43,7 @@ section {
 
 /* Headline text styles with responsive classes */
 .head_text {
-  @apply text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.15] text-white;
+  @apply text-3xl md:text-6xl lg:text-7xl font-extrabold leading-[1.15] text-white;
 }
 
 /* Subtext styles with a top margin and font-weight */

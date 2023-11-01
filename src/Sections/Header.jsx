@@ -57,29 +57,29 @@ export default function Navbar() {
         {/* Sidebar mobile menu (visible on smaller screens) */}
         <div
           className={clsx(
-            "fixed h-full z-50 w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 right-0 -translate-x-full transition-all",
+            "fixed h-screen  lg:hidden z-50 w-full lg:w-[50%] bg-black/50 backdrop-blur-sm top-0 right-0 left-0 transform -translate-x-full lg:translate-x-0 transition-all",
             isSideMenuOpen && "translate-x-0"
           )}
         >
-          <div className="text-black bg-white flex-col absolute left-0 top-0 h-screen p-8 gap-5 z-50 w-[40%] flex">
+          <div className="text-black bg-white flex-col absolute right-0 left-0 top-0 h-screen p-8 bottom-0 gap-5 z-50 w-full lg:w-[50%] flex">
             <IoCloseOutline
               onClick={() => setMenu(false)}
-              className="mt-0 mb-8 text-3xl cursor-pointer"
+              className="mt-0 mb-8 text-2xl lg:text-3xl cursor-pointer"
             />
 
             {/* Mobile menu links */}
             {navlinks.map((link, index) => (
-              <a key={index} className="font-bold " href={link.link}>
+              <a key={index} className="font-bold text-lg" href={link.link}>
                 {link.label}
               </a>
             ))}
 
             <div className="flex flex-col gap-y-2 mb-2">
-              <img className="w-5 " src={world} alt="World Icon" />
-              <span className="text-sm">English</span>
+              <img className="w-4 lg:w-5" src={world} alt="World Icon" />
+              <span className="text-sm lg:text-base">English</span>
 
-              <img className="w-5" src={flag} alt="Flag Icon" />
-              <span className="text-sm cursor-pointer flex items-center gap-x-1">
+              <img className="w-4 lg:w-5" src={flag} alt="Flag Icon" />
+              <span className="text-sm lg:text-base cursor-pointer flex items-center gap-x-1">
                 Bangladesh <IoMdArrowDropdown />
               </span>
             </div>
