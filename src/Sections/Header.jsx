@@ -28,10 +28,10 @@ export default function Navbar() {
   return (
     <header>
       {/* Navigation bar container */}
-      <nav className="flex justify-between container items-center py-4">
+      <nav className="container flex items-center justify-between py-4">
         <div className="flex items-center gap-8">
           {/* Left section of the navbar */}
-          <div className="flex gap-x-5 items-center">
+          <div className="flex items-center gap-x-5">
             <a href="/">
               <img
                 className="object-cover w-32"
@@ -46,7 +46,7 @@ export default function Navbar() {
                 <span className="text-sm">English</span>
 
                 <img className="w-5" src={flag} alt="Flag Icon" />
-                <span className="text-sm flex items-center gap-x-1 cursor-pointer">
+                <span className="flex items-center text-sm cursor-pointer gap-x-1">
                   Bangladesh <IoMdArrowDropdown />
                 </span>
               </div>
@@ -64,22 +64,22 @@ export default function Navbar() {
           <div className="text-black bg-white flex-col absolute right-0 left-0 top-0 h-screen p-8 bottom-0 gap-5 z-50 w-[50%] lg:w-[50%] flex">
             <IoCloseOutline
               onClick={() => setMenu(false)}
-              className="mt-0 mb-8 text-2xl lg:text-3xl cursor-pointer"
+              className="mt-0 mb-8 text-2xl cursor-pointer lg:text-3xl"
             />
 
             {/* Mobile menu links */}
             {navlinks.map((link, index) => (
-              <a key={index} className="font-bold text-lg" href={link.link}>
+              <a key={index} className="text-lg font-bold" href={link.link}>
                 {link.label}
               </a>
             ))}
 
-            <div className="flex flex-col gap-y-2 mb-2">
+            <div className="flex flex-col mb-2 gap-y-2">
               <img className="w-4 lg:w-5" src={world} alt="World Icon" />
               <span className="text-sm lg:text-base">English</span>
 
               <img className="w-4 lg:w-5" src={flag} alt="Flag Icon" />
-              <span className="text-sm lg:text-base cursor-pointer flex items-center gap-x-1">
+              <span className="flex items-center text-sm cursor-pointer lg:text-base gap-x-1">
                 Bangladesh <IoMdArrowDropdown />
               </span>
             </div>
@@ -118,14 +118,14 @@ export default function Navbar() {
                   placeholder="Please enter"
                   required
                 />
-                <span className="absolute px-2 py-4 text-xs underline cursor-pointer text-red-500 top-16">
+                <span className="absolute px-2 py-4 text-xs text-red-500 underline cursor-pointer top-16">
                   Forgot password?
                 </span>
               </div>
               {/* Login button */}
               <div className="mt-5">
                 <input
-                  className="px-8 py-2 text-white rounded-md bg-orange"
+                  className="px-8 py-2 text-white rounded-md cursor-pointer bg-orange"
                   type="submit"
                   value="Login"
                 />

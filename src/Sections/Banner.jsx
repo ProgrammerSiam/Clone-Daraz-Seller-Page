@@ -29,22 +29,22 @@ export default function Banner() {
         {/* Content Section */}
         <div className="relative w-full lg:max-w-2xl">
           <h2 className="head_text">Bangladesh's #1 Marketplace</h2>
-          <p className="mt-4 w-full text-lg md:text-xl text-white lg:max-w-lg">
+          <p className="w-full mt-4 text-lg text-white  md:text-xl lg:max-w-lg">
             Create a Daraz seller account in 5 minutes and reach millions of
             customers today!
           </p>
           <img
-            className="max-w-[100%] md:max-w-[95%] absolute top-44 lg:top-48"
+            className="max-w-[100%] md:max-w-[95%] absolute top-44 lg:top-52"
             src={shope}
             alt="Shopping Image"
           />
         </div>
 
         {/* Form Section (Visible on Larger Screens) */}
-        <div className="hidden lg:block relative bottom-16">
+        <div className="relative hidden lg:block bottom-16">
           {/* Title and "Register as Global Seller" button */}
-          <div className="flex items-center py-4 text-white gap-x-2">
-            <p>Want to sell from overseas to Bangladesh?</p>
+          <div className="flex flex-wrap items-center py-4 text-white gap-x-2">
+            <p className="">Want to sell from overseas to Bangladesh?</p>
             <button className="p-2 border border-white rounded-md">
               Register as Global Seller
             </button>
@@ -66,7 +66,7 @@ export default function Banner() {
               {/* Phone Number Field */}
               <div className="text-slate-500">
                 <span className="py-2 text-sm font-semibold">Phone</span>
-                <div className="flex items-center gap-3 p-3 text-sm border rounded-lg border-slate-300 bg-white">
+                <div className="flex items-center gap-3 p-3 text-sm bg-white border rounded-lg border-slate-300">
                   <label htmlFor="text">+880</label>
                   <input
                     type="text"
@@ -86,7 +86,7 @@ export default function Banner() {
               {/* Verification Field */}
               <div className="text-slate-500">
                 <span className="py-2 text-sm font-semibold">Verification</span>
-                <div className="flex items-center gap-3 p-3 text-sm border rounded-lg border-slate-300 bg-white">
+                <div className="flex items-center gap-3 p-3 text-sm bg-white border rounded-lg border-slate-300">
                   <label htmlFor="" className="cursor-move">
                     <BsChevronDoubleRight size={20} />
                   </label>
