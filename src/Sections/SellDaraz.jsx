@@ -63,14 +63,15 @@ export default function SellDaraz() {
             {/* Icon */}
             <div className="">
               <img
-                className="w-[60px] mr-5 md:w-full"
+                className="w-[60px]
+             md:w-full"
                 src={icon3}
                 alt="Icon 3"
               />
             </div>
 
             {/* Description */}
-            <div className="ml-2">
+            <div className="ml-6">
               <h2 className="sub_text leading-24">Reliable Shipping</h2>
               <p className="mt-2 text-sm leading-5 md:mt-5 text-slate-600">
                 Fast, reliable and hassle-free{" "}
